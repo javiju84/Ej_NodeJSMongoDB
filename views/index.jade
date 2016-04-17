@@ -1,3 +1,34 @@
 extends ./layout.jade
 block contenido
-	h1 NodeJS-MongoDB
+	div(class="container")
+		h1(class="text-info") NodeJS-MongoDB
+			h2(class="text-danger") Introduce los valores
+		div(class="form-group")
+			label(for="nombre") Nombre
+			input(type="text", name="nombre",placeholder="Nombre",id="nombre",class="form-control")
+		div(class="form-group")
+			label(for="fecha") Fecha
+			input(type="fecha", name="fecha",placeholder="Fecha",id="fecha",class="form-control")
+		div(class="form-group")
+			label(for="apertura") Apertura
+			input(type="apertura", name="apertura",placeholder="Apertura",id="apertura",class="form-control")
+		div(class="form-group")
+			label(for="alza") Alza
+			input(type="alza", name="alza",placeholder="Alza",id="alza",class="form-control")
+		div(class="form-group")
+			label(for="bajada") Bajada
+			input(type="bajada", name="bajada",placeholder="Bajada",id="bajada",class="form-control")
+		div(class="form-group")
+			label(for="cierre") Cierre
+			input(type="cierre", name="cierre",placeholder="Cierre",id="cierre",class="form-control")
+		div(class="form-group")
+			label(for="volumen") Volumen
+			input(type="volumen", name="volumen",placeholder="Volumen",id="volumen",class="form-control")
+		div(class="form-group")
+			label(for="ajuste_cierre") Ajuste Cierre
+			input(type="ajuste_cierre", name="ajuste_cierre",placeholder="Ajuste Cierre",id="volumen",class="form-control")
+		
+		div(class="form-group")
+			input(type="submit" value="Enviar Valores" class="btn btn-danger")
+
+						
