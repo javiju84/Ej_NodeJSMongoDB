@@ -1,8 +1,19 @@
 var express = require ("express");
 var app = express();
 var Database = require("./models/database").Database;//llamamos al Schema,librerias
+var bodyParser = require("body-parser");
 
-
+/*
+true o el false define el olgaritmo con que se va hacer el parsing la libreria,
+si el 'false' no se puede hacer parsing de array o parámetro que se envian de una 
+peticón get o post que no sean JSON
+*/
+/*
+"body-parser" buscar los archivos dentro de los datos y extraerlos
+ que vienen en una petición JSON
+ */
+app.use(bodyParser.json());//para peticiones application/json
+app.use(bodyParser.urlencoded({extended: true}));
 
 
 /*views*/
